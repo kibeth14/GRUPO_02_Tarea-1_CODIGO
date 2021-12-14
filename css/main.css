@@ -1,0 +1,55 @@
+body {
+  font-family: 'Georgia', cursive;
+  background-color: #FDEBD0 ;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+.arbol{
+  width:350px;
+  height:175px;
+  border-radius: 10%;
+}
+
+.paisaje{
+	border-radius: 10%;
+	width: 75%;
+	box-shadow: 3px 3px 5px 3px #999;
+}
+
+.met-get{
+  border-radius: 5%;
+  width: 400px;
+  height:275px;
+  box-shadow: 3px 3px 5px 3px #999;
+}
+
+#introduccion {
+  background: #f1f1f1;
+  padding: 50px 0 30px 0;
+  text-align:center;
+  margin-top: 40px;
+}
+
+#componentes {
+  background: #f1f1f1;
+  padding: 50px 0 30px 0;
+  text-align:center;
+  margin-top: 40px;
+}
+
+#domHTML {
+  background: #f1f1f1;
+  padding: 50px 0 30px 0;
+  text-align:center;
+  margin-top: 40px;
+}
+
+footer {
+  background: url(../img/textura-hojas.jpg);
+  padding-bottom: 20px;
+}

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>JS HTML DOM Básico</title>
+    <!-- GOOGLE FONT -->
+	   <link rel="preconnect" href="https://fonts.googleapis.com">
+	   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">>
+    <!-- BOOTSTRAP 4 -->
+    <link rel="stylesheet" href="css/bootstrap.min">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- SCROOLL REVEAL JS LIBRARY CDN -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container-fluid">
+        
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Navegación de palanca">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">INICIO
+              </font></font><span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(Actual)</font></font></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#introduccion"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">INTRODUCCIÓN</font></font></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#metodos"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">METODOS DOM</font></font></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#componentes"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">COMPONENTES DOM</font></font></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#elementos"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ELEMENTOS DOM</font></font></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#domHTML"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DOM HTML</font></font></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#domCSS"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DOM CSS</font></font></a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+    <!-- SECTION -->
+    <section id="header">
+      <div class="container mt-5">
+        <div class="row">
+          
+          <div class="col-md-12 col-sm-12">
+            <div class="header-content-right">
+              <center><h1 class="display-4">JS HTML DOM BÁSICO</h1>
+              <h2 class="mt-5">APLICACIÓN DE TECNOLOGÍAS WEB</h2>
+              <p class="mt-5"><strong>NRC:</strong> 7383<br><strong>Grupo N°2</strong></p>
+              <p class="mt-5"><strong>INTEGRANTES:</strong>
+                <br><br>
+                Katherine Chicaiza
+                <br>
+                Danilo Cuichan
+                <br>
+                Jefferson Nolasco
+              </p>
+              <p class="mt-5"><strong>Ing. Juan Galarraga</strong></p>
+              <p class="mt-5"><strong>Periodo:</strong> 202151</p></center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="introduccion">
+      <div class="container">
+        <p class="h2 mb-2">
+          INTRODUCCIÓN
+        </p>
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="info-left">
+              <img class="paisaje" src="img/intro.png">
+            </div>
+          </div>
+          <div class="col-md-6 my-auto">
+            <div class="info-right">
+              <h2>¿Qué es DOM?</h2>
+              <p>Las siglas DOM significan Document Object Model, o lo que es lo mismo, la estructura del documento HTML. Una página HTML está formada por múltiples etiquetas HTML, anidadas una dentro de otra, formando un árbol de etiquetas relacionadas entre sí, que se denomina árbol DOM (o simplemente DOM).</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+        <div class="row my-5">
+          <div class="col-md-6">
+            <h2>JS HTML DOM BÁSICO</h2>
+            <p>Es esencialmente una interfaz de plataforma que proporciona un conjunto estándar de objetos para representar documentos HTML, XHTML y XML, un modelo estándar sobre cómo pueden combinarse dichos objetos, y una interfaz estándar para acceder a ellos y manipularlos. A través del DOM, los programas pueden acceder y modificar el contenido, estructura y estilo de los documentos HTML y XML, que es para lo que se diseñó principalmente.</p>
+          </div>
+          <div class="col-md-6">
+            <h2>HTML DOM</h2>
+            <p>HTML DOM es un modelo de objetos estándar y una interfaz de programación para HTML.Los elementos HTML como objetos.Las propiedades de todos los elementos HTML.Los métodos para acceder a todos los elementos HTMLLos eventos para todos los elementos HTML.En otras palabras: HTML DOM es un estándar sobre cómo obtener, cambiar, agregar o eliminar elementos HTML.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="metodos">
+      <div class="container">
+        <p class="h2 mb-2">
+          METODOS DOM
+        </p>
+        <div class="row mt-5">
+          <div class="col-md-3">
+            <div class="info-left">
+              <img class="paisaje" src="img/dom_js.png">
+            </div>
+          </div>
+          <div class="col-md-9 my-auto">
+            <div class="info-right">
+              <h2>DOM y JavaScript</h2>
+              <p> El DOM no es un lenguaje de programación pero sin él, el lenguaje JavaScript no tiene ningún modelo o noción de las páginas web, de la páginas XML ni de los elementos con los cuales es usualmente relacionado. Cada elemento -"el documento íntegro, el título, las tablas dentro del documento, los títulos de las tablas, el texto dentro de las celdas de las tablas"- es parte del modelo de objeto del documento para cada documento, así se puede acceder y manipularlos utilizando el DOM y un lenguaje de escritura, como JavaScript.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="metodos">
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-md-9">
+            <h2>Interfaces del DOM</h2>
+            <p>Desde el punto de vista del programador web, es bastante indiferente saber que la representación del objeto del elemento HTML form toma la propidedad name desde la interfaz HTMLFormElement pero que las propiedades className se toman desde la propia interfaz HTMLElement. En ambos casos, la propiedad está sólo en el objeto form. La referencia a un objeto table, como en el ejemplo siguiente, utiliza estas interfaces intercambiables sobre el objeto.</p>
+          </div>
+          <div class="col-md-3">
+            <div class="info-left">
+              <img class="arbol" src="img/interface.jpg" >
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="metodos">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="info-left">
+              <img class="met-get" src="img/get.png">
+            </div>
+          </div>
+          <div class="col-md-8 my-auto">
+            <div class="info-right">
+              <h2>getElementById</h2>
+              <p> El método getElementById permite, como su nombre indica, seleccionar un elemento del documento por medio del valor del atributo id que se le haya asignado. Su sintaxis es la siguiente: <br> <strong>document.getElementById('id_del_elemento');</strong><br>Por medio de esta línea podríamos elegir cualquier elemento cuyo identificador conozcamos para manipularlo posteriormente. Por ejemplo, por medio de document.getElementById('contenido') seleccionaríamos el elemento con id="contenido". Como todo método, getElementById tiene que ser un método de un objeto; para éste y para todos los métodos que vamos a ver en esta sección sobre el DOM, el objeto del que dependen es document.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="metodos">
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-md-8">
+            <h2>AppendChild</h2>
+            <p>Por medio de appendChild podemos incluir en un nodo un nuevo hijo, de esta manera: <br><strong>   elemento_padre.appendChild(nuevo_nodo);</strong><br>           
+            El nuevo nodo se incluye inmediatamente después de los hijos ya existentes —si hay alguno— y el nodo padre cuenta con una nueva rama. Por ejemplo, el siguiente código:<br><strong>
+            var lista = document.createElement('ul');<br>
+            var item = document.createElement('li');<br>
+            lista.appendChild(item);</strong><br>            
+            crea un elemento ul y un elemento li, y convierte el segundo en hijo del primero.</p>
+          </div>
+          <div class="col-md-4">
+            <div class="info-left">
+              <img class="met-get" src="img/apend.jpg" >
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="componentes">
+      <div class="container">
+        <p class="h2 mb-2">
+          COMPONENTES DOM
+        </p>
+        <h5>La aproximación básica para implementar un componente web, generalmente es la siguiente:</h5>
+        <div class="row mt-5">
+          <div class="col-md-4 my-auto">
+            <div class="info-right">
+              <h1>&#9312</h1>
+              <p>Crear una clase o función en la cual especificar la funcionalidad del componente web. Si se usa una clase, usar la sintaxis de ES2015 (estándar de JavaScript).</p>
+              
+            </div>
+          </div>
+        
+          <div class="col-md-4">
+            <h1>&#9313</h1>
+            <p>Registrar el nuevo elemento personalizado utilizando el método CustomElementRegistry.define(), pasándole el nombre del elemento a ser definido, la clase o función en la cuál su funcionalidad esta especificada, y opcionalmente, de que elemento hereda.</p>
+          </div>
+
+          <div class="col-md-4">
+            <h1>&#9314</h1>
+            <p>Si se requiere, adjuntar un shadow DOM al elemento personalizado usando el método Element.attachShadow(). Añadir elementos hijos, oyentes de eventos, etc., al shadow DOM utilizando métodos normales del DOM.</p>
+          </div>
+
+          <div class="container">
+        <div class="row my-5">
+          <div class="col-md-6">
+            <h1>&#9315</h1>
+            <p>Si se requiere, definir una plantilla HTML utilizando &lttemplate&gt y &ltslot&gt. Nuevamente usar métodos regulares del DOM para clonar la plantilla y acoplarla al shadow DOM.</p>
+          </div>
+          <div class="col-md-6">
+            <h1>&#9316</h1>
+            <p>Utilizar los componentes personalizados en la página web cuando se desee, como se utilizaría cualquier otro elemento HTML.</p>
+          </div>
+        </div>
+      </div>          
+      
+      </div>
+    </section>
+
+    <section id="elementos">
+      <div class="container">
+        <p class="h2 mb-2">
+          ELEMENTOS DOM
+        </p>
+        
+        <section id="elementos">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="info-left">
+              <img class="met-get" src="img/ele1.png">
+            </div>
+          </div>
+          <div class="col-md-8 my-auto">
+            <div class="info-right">
+              <h2>Encontrar los elementos HTML mediante Id</h2>
+              <p>La forma más fácil de encontrar un elemento HTML en el DOM, es mediante el uso del elemento de id. Si se encuentra el elemento, el método devolverá el elemento como un objeto (en myElement ). Si no se encuentra el elemento, myElement contendrá nulo.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="elementos">
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-md-8">
+          	<br>
+          	<br>
+          	<br>
+            <h2>Encontrar los elementos HTML de Nombre de etiqueta</h2>
+            <p>Por ejemplo, este sería el código si queremos encontrar el elemento con id="main", y luego buscar todos &ltp&gt elementos dentro de "main":</p>
+          </div>
+          <div class="col-md-4">
+            <div class="info-left">
+              <img class="met-get" src="img/ele2.png" >
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="elementos">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="info-left">
+              <img class="met-get" src="img/ele3.png">
+            </div>
+          </div>
+          <div class="col-md-8 my-auto">
+            <div class="info-right">
+              <h2>Encontrar los elementos HTML de Class Nombre</h2>
+              <p>Si deseamos encontrar todos los elementos HTML con la misma class de nombres, debemos utilizar getElementsByClassName(). El siguiente ejemplo devuelve una lista de todos los elementos con class="intro".</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="elementos">
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-md-8">
+          	<br>
+          	<br>
+          	<br>
+            <h2>Encontrar los elementos HTML de selectores CSS</h2>
+            <p>Si queremos encontrar todos los elementos HTML que coincide con un selector CSS especificado (id, nombres de clases, tipos, atributos, valores de atributos, etc), utilizamos el querySelectorAll() método. Por ejemplo, el siguiente código devuelve una lista de todos los &ltp&gt elementos con class="intro" .</p>
+          </div>
+          <div class="col-md-4">
+            <div class="info-left">
+              <img class="met-get" src="img/ele4.png" >
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="elementos">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="info-left">
+              <img class="met-get" src="img/ele5.png">
+            </div>
+          </div>
+          <div class="col-md-8 my-auto">
+            <div class="info-right">
+              <h2>Encontrar los elementos HTML de colecciones de objetos HTML</h2>
+              <p>El siguiente código encuentra el elemento de formulario con id="frm1", en la colección de formularios, y muestra todos los valores de los elementos:</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>        
+      
+      </div>
+    </section>
+
+    <section id="domHTML">
+      <div class="container">
+        <p class="h2 mb-2">
+          DOM HTML
+        </p>
+        <h6>El DOM HTML permite JavaScript para cambiar el contenido de los elementos HTML.</h6>
+        <div class="row mt-5">
+          <div class="col-md-4 my-auto">
+            <div class="info-right">
+              <h2>Cambio de la secuencia de salida HTML</h2>
+              <p>En JavaScript, document.write() se puede utilizar para escribir directamente en la corriente de salida HTML. Nunca debemos usar document.write() después de cargar el documento porque se sobrescribirá el documento.</p>
+              <img class="met-get" src="img/dom1.png">              
+            </div>
+          </div>
+        
+          <div class="col-md-4">
+            <h2>Cambio de contenido HTML</h2>
+            <p>La forma más sencilla de modificar el contenido de un elemento HTML es usando el innerHTML propiedad. Para cambiar el contenido de un elemento HTML, utilizamos la siguiente sintaxis: <b>document.getElementById(id).innerHTML = new HTML</b><br>En el siguiente ejemplo se cambia el contenido de un &ltp&gt elemento:</p>
+            <img class="met-get" src="img/dom2.png">
+          </div>
+
+          <div class="col-md-4">
+            <h2>Cambiar el valor de un atributo</h2>
+            <p>Usamos la siguiente sintaxis: <b>document.getElementById(id).attribute=new value</b><br> En el siguiente ejemplo se cambia el valor del atributo src de un &ltimg&gt elemento:</p>
+            <img class="met-get" src="img/dom3.png">
+          </div>                   
+      
+      </div>
+    </section>
+
+        <section id="domCSS">
+      <div class="container">
+        <p class="h2 mb-2" align="center">
+          DOM CSS
+        </p>
+
+        <!-- Carousel wrapper -->
+		<div
+		  id="carouselMultiItemExample"
+		  class="carousel slide carousel-dark text-center"
+		  data-mdb-ride="carousel"
+		>
+		  <!-- Inner -->
+		  <div class="carousel-inner py-4">
+		    <!-- Single item -->
+		    <div class="carousel-item active">
+		      <div class="container">
+		        <div class="row">
+		          <div class="col-lg-4">
+		            <div class="card">
+		              <img
+		                src="img/css1.png"
+		                class="card-img-top"
+		                alt="Waterfall"
+		              />
+		              <div class="card-body">
+		                <h5 class="card-title">Cambiar el estilo de HTML</h5>
+		                <p class="card-text">
+		                  document.getElementById(id).style.property=new style
+		                </p>		                
+		              </div>
+		            </div>
+		          </div>
+
+		          <div class="col-lg-4 d-none d-lg-block">
+		            <div class="card">
+		              <img
+		                src="img/css2.png"
+		                class="card-img-top"
+		                alt="Sunset Over the Sea"
+		              />
+		              <div class="card-body">
+		                <h5 class="card-title">El uso de Events</h5>
+		                <p class="card-text">
+		                  El DOM HTML le permite ejecutar código cuando se produce un evento. Los eventos se generan por el navegador cuando "pasan cosas" para los elementos HTML:
+		                  <ul class="list-group">
+							  <li class="list-group-item">Un elemento se hace clic en él</li>
+							  <li class="list-group-item">La página se ha cargado</li>
+							  <li class="list-group-item">Los campos de entrada se cambian</li>
+						</ul>
+		                </p>		                
+		              </div>
+		            </div>
+		          </div>
+
+		          <div class="col-lg-4 d-none d-lg-block">
+		            <div class="card">
+		              <img
+		                src="img/selector.png"
+		                class="card-img-top"
+		                alt="Sunset over the Sea"
+		              />
+		              <div class="card-body">
+		                <h5 class="card-title">Selector Árbol Dom</h5>
+		                <p class="card-text">
+		                  Los selectores de CSS ayudan a seleccionar elementos HTML (por ejemplo: DIV, P, H1) para aplicar estilos.
+		                </p>		                
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  <!-- Inner -->
+		</div>
+		<!-- Carousel wrapper -->      
+               
+      
+      </div>
+    </section>
+
+
+
+
+
+
+    <footer>
+    	<!-- Copyright -->
+		  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+		    © 2021 Todos los derechos reservados:
+		    <a class="text-reset fw-bold" href="#header">Grupo 2 - A.T.W - ESPE</a>
+		  </div>
+		<!-- Copyright -->
+	</footer>
+
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- SCROOLL REVEAL SCRIPT -->
+    <script>
+      window.sr = ScrollReveal();
+
+    sr.reveal('.navbar', {
+      duration: 2000,
+      origin: 'bottom'
+    });
+
+    sr.reveal('.header-content-left', {
+      duration: 4050,
+      origin: 'bottom',
+      distance: '500px'
+    });
+
+    sr.reveal('.header-content-right', {
+      duration: 1000,
+      origin: 'left',
+      distance: '200px'
+    });
+
+    sr.reveal('.header-btn', {
+      duration: 2000,
+      delay: 1000, 
+      origin: 'top'
+    });
+
+    sr.reveal('#testimonial div', {
+      duration: 2000,
+      origin: 'right',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+    </script>
+  </body>
+</html>
